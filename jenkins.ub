@@ -1,0 +1,54 @@
+sudo apt-get update -y
+
+
+sudo apt-get install java-1.8.0-openjdk-devel -y
+
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+
+
+echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+
+
+
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+
+
+sudo apt-get update -y
+
+
+sudo apt-get install jenkins -y
+
+
+
+jenkins -v
+
+
+
+sudo systemctl start jenkins
+
+
+
+sudo systemctl status jenkins
+
+
+
+sudo systemctl enable jenkins  
+
+
+
+sudo ufw allow 8080
+
+
+sudo ufw status 
+
+
+sudo ufw allow OpenSSH -y 
+
+
+sudo ufw enable 
+
+
+sudo ufw status 
