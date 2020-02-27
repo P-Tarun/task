@@ -1,0 +1,20 @@
+yum update -y
+    4  yum install git -y
+    5  git --version
+    6  mkdir git
+    7  cd git 
+    8  cd /
+    9  git config --global user.name P-Tarun
+   10  git config --global user.email tarun151831@gmail.com
+   11  git config --list
+   12  cd git
+   13  git clone https://github.com/P-Tarun/task.git
+   14  git init
+   15  cd task
+   16  ls
+   17  touch gitlab
+   18  ls
+   19  git add gitlab
+   20  git status
+   21  git commit -m "file added"
+   22  git push origin master
